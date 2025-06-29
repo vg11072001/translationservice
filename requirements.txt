@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+requests
+sqlalchemy
+google-cloud-translate
+jinja2  

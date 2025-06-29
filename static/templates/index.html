@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation MicroService</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .response {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow-y: auto; 
+            flex: 1;
+            max-height: 50vh;
+        }
+        .translated-text {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .original-text {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Translation MicroService</h1>
+        
+        <!-- Single Translation Form -->
+        <div id="single-translate-form">
+            <h2>Single Translation</h2>
+            <form class="form-group">
+                <label for="text">Text to Translate:</label>
+                <textarea id="text" rows="4" placeholder="Enter text up to 1000 characters"></textarea>
+                <label for="target_language">Target Language:</label>
+                <select id="target_language">
+                    <option value="en">English (en)</option>
+                    <option value="hi">Hindi (hi)</option>
+                    <option value="ta">Tamil (ta)</option>
+                    <option value="kn">Kannada (kn)</option>
+                    <option value="bn">Bengali (bn)</option>
+                    <option value="fr">French (fr)</option>
+                    <option value="es">Spanish (es)</option>
+                    <!-- Add more languages as needed -->
+                </select>
+                <button type="button" onclick="translateText()">Translate</button>
+            </form>
+            <div class="response" id="single-translate-response">
+                <div id="translated-text" class="translated-text"></div>
+                <div id="original-text" class="original-text"></div>
+                <div id="split-info" class="original-text"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
