@@ -38,3 +38,7 @@ The service supports a variety of languages, including but not limited to Englis
 4. Access the Application:
 Open your web browser and navigate to `http://127.0.0.1:8000` to access the application.
 
+
+### Development Status
+- Integration to deploy on Docker,
+- Make it more user friendly and etc..
