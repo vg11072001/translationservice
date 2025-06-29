@@ -5,6 +5,8 @@
 
 The Translation MicroService is a lightweight, modular application designed to translate text using the Google Cloud Translate API. The service is built using FastAPI, a modern and fast web framework for building APIs with Python, and is served using Uvicorn, an ASGI server. The application is designed to handle both single and bulk translations, splitting longer texts into manageable chunks to ensure efficient processing.   
 
+The service supports a variety of languages, including but not limited to English (en), Hindi (hi), Tamil (ta), Kannada (kn), Bengali (bn), French (fr), and Spanish (es). Users can select their desired target language from a dropdown menu in the web interface, making the service versatile and accessible for a wide range of users.
+
 [Documentation](https://docs.google.com/document/d/1yMmJ7tDfi7moVpnZZJfdJQRN9hTeTr4o4oDRlrt6oV0/edit?usp=sharing)
 
 ### Usage
