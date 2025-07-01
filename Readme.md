@@ -11,6 +11,8 @@ The service supports a variety of languages, including but not limited to Englis
 
 ### Usage
 
+### One options with manual steps
+
 1. Setup the Environment:
 - Ensure you have `python 3.9` or later version installed on your system.
 - Install the required dependencies using pip: 
@@ -38,6 +40,20 @@ The service supports a variety of languages, including but not limited to Englis
 4. Access the Application:
 Open your web browser and navigate to `http://127.0.0.1:8000` to access the application.
 
+#### Second options with docker:
+
+1. Build the Docker Image:
+   ```
+   docker build -t translation-service .
+   ```
+
+2. Run the Docker Container:
+   ```
+   docker run -p 8000:80 translation-service
+   ```
+
+3. Access the Application: 
+    - Open your web browser and navigate to `http://127.0.0.1:8000` to access the application.
 
 ### Development Status
 - Integration to deploy on Docker,
