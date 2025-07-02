@@ -27,7 +27,7 @@ The service supports a variety of languages, including but not limited to Englis
     
 
     ```
-    export GOOGLE_APPLICATION_CREDENTIALS="path/to/credentials.json
+    set GOOGLE_APPLICATION_CREDENTIALS="path/to/credentials.json
     ```
 
 3. Run the Application:
